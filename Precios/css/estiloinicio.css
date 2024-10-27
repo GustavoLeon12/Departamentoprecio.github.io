@@ -1,0 +1,218 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+}
+.nav-links a.cotizar-btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*modal*/
+.modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+.modal-content {
+    background-color: #fff; /* Fondo blanco para el contenido del modal */
+    color: black;
+}
+
+/* Fondo de la sección */
+.main-content {
+    background-image: url('../imagenes/carrusel.jpg'); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Efecto de parpadeo en el texto de "¡No pierdas esta oportunidad!" */
+.overlay p strong {
+    color: #ffcc00;
+    animation: blink 1s infinite alternate;
+}
+
+/* Botón interactivo */
+.cotizar-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.cotizar-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.5);
+}
+
+/* Animaciones */
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Páginas de Interés */
+.interest-pages {
+    flex: 1;
+    min-width: 200px;
+    margin: 15px;
+}
+
+.interest-pages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.interest-pages ul li a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+    transition: color 0.3s;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.interest-pages ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Contacto */
+.contact-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 15px;
+}
+
+.contact-section p {
+    color: #ccc;
+    margin: 5px 0;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+/* Redes Sociales */
+.social-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 15px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.social-links li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    padding-left: 35px;
+}
+
+.social-links li a {
+    color: #ffffff;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.social-links li a i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.social-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Derechos Reservados */
+.footer-rights {
+    margin-top: 20px;
+    color: #999;
+    font-size: 0.85rem;
+}

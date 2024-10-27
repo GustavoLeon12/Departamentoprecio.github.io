@@ -1,0 +1,222 @@
+/* Reinicio de márgenes y configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Estilos del Header */
+header {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+}
+
+.nav-links a.cotizar-btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+}
+/*modal*/
+.modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+.modal-content {
+    background-color: #fff; /* Fondo blanco para el contenido del modal */
+    color: black;
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.interest-pages, .contact-section, .social-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 15px;
+}
+
+.interest-pages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.interest-pages ul li a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+    transition: color 0.3s;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.interest-pages ul li a:hover, .social-links li a:hover {
+    color: #ffcc00;
+}
+
+.contact-section p {
+    color: #ccc;
+    margin: 5px 0;
+    text-align: justify;
+    padding-left: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.social-links li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    padding-left: 35px;
+}
+
+.social-links li a {
+    color: #ffffff;
+    display: flex;
+    text-decoration: none;
+}
+
+.social-links li a i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.footer-rights {
+    margin-top: 20px;
+    color: #999;
+    font-size: 0.85rem;
+}
+
+/* Contenedor Principal */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 250px;
+    background: url('../imagenes/form.webp') no-repeat center center;
+    background-size: cover;
+
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background-color: rgba(164, 164, 164, 0.704);
+    padding: 20px;
+    border-radius: 8px;
+    width: 55%;
+    min-height: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+.form-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    height: 35px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    align-self: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el contenedor de resultados */
+.result-container {
+    background-color: rgba(164, 164, 164, 0.704);
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    height: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 35px;
+}
+
+.result-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
